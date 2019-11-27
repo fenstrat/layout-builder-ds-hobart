@@ -61,7 +61,7 @@
           <p>Senior Backend Developer @ PreviousNext</p>
           <p><a href="https://www.drupal.org/u/fenstrat">drupal.org/u/fenstrat</a></p>
           <aside class="notes">
-            <p>1/30</p>
+            <p>1/31</p>
             <ul>
               <li>PNX clients; Amaysim, TfNSW, BCC</li>
               <li>I live in Northern Rivers of NSW</li>
@@ -80,7 +80,7 @@
             <li>Gotchas</li>
           </ul>
           <aside class="notes">
-            <p>2/30</p>
+            <p>2/31</p>
             <ul>
               <li>Very quickly introduce LB</li>
               <li>Best practice, UI improvements, evolving space</li>
@@ -98,13 +98,46 @@
             <li>Works on all content entities</li>
           </ul>
           <aside class="notes">
-            <p>3/30</p>
+            <p>3/31</p>
             <ul>
               <li>Similar to panels in Drupal 7</li>
               <li>Allows control over entity type layout, or per entity layout</li>
               <li>Version shipped with 8.7 was MVP</li>
               <li>UX still needs polish</li>
               <li>Single core based approach to content layout, big deal</li>
+              <li>Before diving in, who's used Paragraphs?</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Paragraphs</h2>
+          <ul>
+            <li>Can make content editors :(</li>
+          </ul>
+          <aside class="notes">
+            <p>4/31</p>
+            <ul>
+              <li>Great content modeling tool</li>
+              <li>Can be not so friendly for content editors</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <img src="media/paragraphs-final-output.png">
+        </section>
+
+        <section>
+          <img src="media/paragraphs-nightmare-edit-form.png" style="width: 30%">
+          <aside class="notes">
+            <ul>
+              <li>No way of visually previewing your changes</li>
+              <li>Big pluses of LB:</li>
+              <ul>
+                <li>LB you can see your changes before saving</li>
+                <li>LB is in core</li>
+              </ul>
             </ul>
           </aside>
         </section>
@@ -116,7 +149,7 @@
         <section>
           <h2>Editorial UI/UX</h2>
           <aside class="notes">
-            <p>4/30</p>
+            <p>5/31</p>
             <ul>
               <li>Best practice</li>
             </ul>
@@ -130,7 +163,7 @@
             <li>Structured data still very important</li>
           </ul>
           <aside class="notes">
-            <p>5/30</p>
+            <p>6/31</p>
             <ul>
               <li>1 - Editorial UI</li>
               <li>Excels at custom layouts</li>
@@ -145,7 +178,7 @@
         <section>
           <img src="media/default-lb-edit-ui.png" style="width: 75%">
           <aside class="notes">
-            <p>6/30</p>
+            <p>7/31</p>
             <ul>
               <li>Default LB content edit</li>
               <li>"Edit" contains fields</li>
@@ -159,7 +192,7 @@
         <section>
           <img src="media/edit-metadata-2.png" style="width: 80%">
           <aside class="notes">
-            <p>7/30</p>
+            <p>8/31</p>
             <ul>
               <li>Customised tabs, based on client feedback</li>
               <li>Addition of vertical tabs</li>
@@ -172,7 +205,7 @@
         <section>
           <img src="media/edit-metadata-1.png" style="width: 80%">
           <aside class="notes">
-            <p>7/30</p>
+            <p>9/31</p>
             <ul>
               <li>"Content" tab contains fields which display on the page</li>
             </ul>
@@ -182,7 +215,7 @@
         <section>
           <img src="media/edit-content.png" style="width: 70%">
           <aside class="notes">
-            <p>8/30</p>
+            <p>10/31</p>
             <ul>
               <li>"Edit content" is then "Layout" from default LB</li>
               <li>Maps better to content authors understanding of page content</li>
@@ -199,7 +232,7 @@
             <li><a href="https://www.drupal.org/project/ideas/issues/607396">Fieldable fields in core</a></li>
           </ul>
           <aside class="notes">
-            <p>9/30</p>
+            <p>11/31</p>
             <ul>
               <li>2 - Editorial UI</li>
               <li>Blocks may still need multiple values, each with multiple fields, e.g. opening hours</li>
@@ -215,7 +248,7 @@
           <h2>Block theming</h2>
           <p>Blocks need to accommodate different contexts</p>
           <aside class="notes">
-            <p>10/30</p>
+            <p>12/31</p>
             <ul>
               <li>3 - Editorial UI</li>
               <li>Full LB editorial experience can result in blocks being placed in very different situations</li>
@@ -227,7 +260,7 @@
         <section>
           <video data-autoplay src="media/responsive-block-design.mp4"></video>
           <aside class="notes">
-            <p>12/30</p>
+            <p>13/31</p>
             <ul>
               <li>If this is too much flexibility, LB library can restrict this</li>
             </ul>
@@ -241,12 +274,13 @@
             <li><a href="https://www.drupal.org/project/layout_builder_modal">LB Modal</a></li>
           </ul>
           <aside class="notes">
-            <p>13/30</p>
+            <p>14/31</p>
             <ul>
               <li>4 - Editorial UI</li>
               <li>Easy to outgrow the off canvas tray</li>
               <li>LB Modal module can solve this, renders edit forms in a modal instead of the off canvas tray</li>
               <li>Note it's not yet fully accessible (unlike LB core)</li>
+              <li>Has some implementation issues, it's certainly not perfect</li>
               <li>Another custom solution is to widen the off canvas tray</li>
             </ul>
           </aside>
@@ -273,7 +307,7 @@
             <img src="media/restrictions-blocks.png">
           </div>
           <aside class="notes">
-            <p>14/30</p>
+            <p>15/31</p>
             <ul>
               <li>5 - Editorial UI</li>
               <li>By default LB shows a lot of options</li>
@@ -291,7 +325,7 @@
             <li>Restrict editor choices</li>
           </ul>
           <aside class="notes">
-            <p>15/30</p>
+            <p>16/31</p>
             <ul>
               <li>6 - Editorial UI</li>
               <li>Module avoids the potential of too much flexibility with bespoke layouts</li>
@@ -319,7 +353,7 @@
             <img src="media/styles-2-block.png">
           </div>
           <aside class="notes">
-            <p>16/30</p>
+            <p>17/31</p>
             <ul>
               <li>7 - Editorial UI</li>
               <li>Also adds a block template suggestion</li>
@@ -335,7 +369,7 @@
             <li>Edit other regions with LB</li>
           </ul>
           <aside class="notes">
-            <p>17/30</p>
+            <p>18/31</p>
             <ul>
               <li>8 - Editorial UI</li>
               <li>New contrib module from Tim Plunkett</li>
@@ -347,21 +381,21 @@
         <section>
           <img src="media/lb-everywhere-1.png">
           <aside class="notes">
-            <p>18/30</p>
+            <p>19/31</p>
           </aside>
         </section>
 
         <section>
           <img src="media/lb-everywhere-2.png">
           <aside class="notes">
-            <p>19/30</p>
+            <p>20/31</p>
           </aside>
         </section>
 
         <section>
           <h2>Performance</h2>
           <aside class="notes">
-            <p>20/30</p>
+            <p>21/31</p>
           </aside>
         </section>
 
@@ -372,7 +406,7 @@
             <li>Control exposed blocks via custom code</li>
           </ul>
           <aside class="notes">
-            <p>21/30</p>
+            <p>22/31</p>
             <ul>
               <li>1 - Performance</li>
               <li>Drupal exposes a huge amount blocks, e.g. every field on every entity type</li>
@@ -391,7 +425,7 @@
             <li><a href="https://www.drupal.org/project/drupal/issues/3043330">#3043330</a> Only create blocks for LB enabled entities</li>
           </ul>
           <aside class="notes">
-            <p>22/30</p>
+            <p>23/31</p>
             <ul>
               <li>2 - Performance</li>
               <li>2nd patch is a complex problem space, trying to automatically reduce the number field blocks exposed</li>
@@ -403,7 +437,7 @@
         <section>
           <h2>Gotchas</h2>
           <aside class="notes">
-            <p>23/30</p>
+            <p>24/31</p>
           </aside>
         </section>
 
@@ -418,7 +452,7 @@
             </ul>
           </ul>
           <aside class="notes">
-            <p>24/30</p>
+            <p>25/31</p>
             <ul>
               <li>1 - Gotcha</li>
               <li>Translation-specific layouts are not supported</li>
@@ -437,7 +471,7 @@
             <li><a href="https://www.drupal.org/project/drupal/issues/3045171">#3045171</a> Ongoing work in core</li>
           </ul>
           <aside class="notes">
-            <p>25/30</p>
+            <p>26/31</p>
             <ul>
               <li>2 - Gotcha</li>
               <li>Effects any form that is rendered in the LB UI</li>
@@ -455,7 +489,7 @@
             <li><a href="https://www.drupal.org/project/drupal/issues/3025231">#3025231</a> Ongoing work in core</li>
           </ul>
           <aside class="notes">
-            <p>26/30</p>
+            <p>27/31</p>
             <ul>
               <li>3 - Gotcha</li>
               <li>WIP to mimic the views UI locking system</li>
@@ -472,7 +506,7 @@
             <li><a href="https://www.drupal.org/project/drupal/issues/2942975">#2942975</a> Ongoing work in core</li>
           </ul>
           <aside class="notes">
-            <p>27/30</p>
+            <p>28/31</p>
             <ul>
               <li>4 - Gotcha</li>
               <li>All HTTP API access to Layout Builder data is currently forbidden</li>
@@ -495,7 +529,7 @@
             <li><a href="https://www.drupal.org/project/issues/search/drupal?project_issue_followers=&status%5B%5D=Open&component%5B%5D=layout_builder.module&issue_tags_op=%3D">Core issue queue</a></li>
           </ul>
           <aside class="notes">
-            <p>28/30</p>
+            <p>29/31</p>
             <ul>
               <li>Core docs are pretty good</li>
               <li>Amsterdam talks; Boyan Borisov, Tim Plunkett</li>
@@ -507,7 +541,7 @@
         <section>
           <h2>Summary</h2>
           <aside class="notes">
-            <p>29/30</p>
+            <p>29/31</p>
             <ul>
               <li>A lot of evolving best practice, but def ready for use now</li>
               <li>Consider content architecture, don't just shove everything into LB blocks</li>
@@ -521,7 +555,7 @@
           <h2 style="margin-bottom: 1em">Thank you</h2>
           <h2>Questions?</h2>
           <aside class="notes">
-            <p>30/30</p>
+            <p>30/31</p>
           </aside>
         </section>
       </div>
